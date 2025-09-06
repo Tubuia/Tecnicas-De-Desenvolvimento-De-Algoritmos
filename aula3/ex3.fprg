@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ARTHURCANTONSOUZADEP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-05 08:21:53 "/>
+        <attribute name="created" value="QVJUSFVSQ0FOVE9OU09VWkFERVA7REYwMS1MQUIwOC0wNTsyMDI1LTA5LTA1OyIwODoxNjo0MyAiOzM0Nzc="/>
+        <attribute name="edited" value="QVJUSFVSQ0FOVE9OU09VWkFERVA7REYwMS1MQUIwOC0wNTsyMDI1LTA5LTA1OyIwODoyMTo1MyAiOzE7MzU4Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1" type="Integer" array="False" size=""/>
+            <declare name="n2" type="Integer" array="False" size=""/>
+            <declare name="n3" type="Integer" array="False" size=""/>
+            <declare name="media" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite a primeira nota:&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Digite a segunda nota:&quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;Digite a terceira nota:&quot;" newline="True"/>
+            <input variable="n3"/>
+            <assign variable="media" expression="(n1 + n2 + n3) / 3"/>
+            <output expression="&quot;Media: &quot; &amp;media" newline="True"/>
+            <if expression="media &gt;= 7">
+                <then>
+                    <output expression="&quot;Aluno Aprovado&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Aluno Reprovado&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
