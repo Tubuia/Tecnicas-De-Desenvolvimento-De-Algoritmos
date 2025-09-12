@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ARTHURCANTONSOUZADEP"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-12 07:24:13 "/>
+        <attribute name="created" value="QVJUSFVSQ0FOVE9OU09VWkFERVA7REYwMS1MQUIwOC0wNTsyMDI1LTA5LTEyOyIwNzoxMzozMyAiOzM0NzA="/>
+        <attribute name="edited" value="QVJUSFVSQ0FOVE9OU09VWkFERVA7REYwMS1MQUIwOC0wNTsyMDI1LTA5LTEyOyIwNzoyNDoxMyAiOzE7MzU3OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n100, n50, n20, n10, n5, n2, n1, s" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o valor do saque&quot;" newline="True"/>
+            <input variable="s"/>
+            <assign variable="n100" expression="s/100"/>
+            <assign variable="n50" expression="(s%100)/50"/>
+            <assign variable="n20" expression="((s%100)%50)/20"/>
+            <assign variable="n10" expression="(((s%100)%50)%20)/10"/>
+            <assign variable="n5" expression="((((s%100)%50)%20)%10)/5"/>
+            <assign variable="n2" expression="(((((s%100)%50)%20)%10)%5)/2"/>
+            <assign variable="n1" expression="((((((s%100)%50)%20)%10)%5)%2)/1"/>
+            <output expression="&quot;notas de 100: &quot; &amp;n100 &amp;&quot; notas de 50: &quot; &amp;n50 &amp;&quot; notas de 20: &quot; &amp;n20 &amp;&quot; notas de 10: &quot; &amp;n10 &amp;&quot; notas de 5: &quot; &amp;n5 &amp;&quot; notas de 2: &quot; &amp;n2 &amp;&quot; notas de 1: &quot; &amp;n1" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
